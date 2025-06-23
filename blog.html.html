@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Institute website</title>
+        <link rel="stylesheet" href="style.css">   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+<section class="sub-header">
+           <nav>
+            <a href="index.html"><img src="images/education.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="course.html.html">COURSE</a></li>
+                    <li><a href="blog.html.html">BLOG</a></li>
+                    <li><a href="contact.html.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+           </nav>
+          <h1>Our Certificate & Our Program for 2025</h1>  
+</section>
+
+<!------ Blog content ------>
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/degree.png">
+            <h2>Our Certificate & Our Program for 2025</h2>
+            <p>We are excited to announce our new certificate programs for 2025, designed to equip students with the skills and knowledge needed for success in their chosen fields.
+                 Our programs will cover a wide range of topics, including technology, business, and the arts.</p>
+                 <br>
+                 <p>Each program will be led by experienced instructors and will include hands-on learning opportunities, allowing students to apply their knowledge in real-world situations. 
+                    We believe that these programs will provide valuable credentials that will enhance students' career prospects.</p>
+            <br>
+            <p>We are committed to providing high-quality education and support to our students, and we look forward to helping them achieve their academic and professional goals.</p>
+
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name" required>
+                    <input type="email" placeholder="Enter Email" required>
+                    <textarea rows="5" placeholder="Your Comment" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Post comment</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!------footer----->
+<section class="footer">
+    <h4>About Us</h4>
+    <p1>We are a leading educational institution dedicated to providing<br>quality education and fostering a supportive learning environment.</p1>
+    <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p1>Made with <i class="fa fa-heart-o"></i> By Zhnul Abdin </p1>
+
+</section>
+
+
+<!------javascript for toggle Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function ShowMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
